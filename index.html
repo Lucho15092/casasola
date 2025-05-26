@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CASA/SOLA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      position: relative;
+      overflow-x: hidden;
+      margin: 0;
+      font-family: 'Karla', sans-serif;
+      font-size: 24px;
+      line-height: 1.8;
+      background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+      background-color: #111;
+      color: #f1f1f1;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 240px;
+      max-width: 90%;
+      margin-bottom: 1rem;
+    }
+    h1, h2 {
+      font-family: 'Press Start 2P', sans-serif;
+letter-spacing: 2px;   /* Espacio entre letras */
+  line-height: 1.5;      /* Altura de línea */
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ff39a4;
+      text-shadow: 2px 2px 0 #000;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+    }
+    .instagram {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.3rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #e91e63;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+.float {
+  animation: floatY 4s ease-in-out infinite;
+}
+</style>
+
+</head>
+<body>
+
+<audio id="background-audio" loop controls>
+  <source src="audio/ser-una-planta.mp3" type="audio/mpeg" />
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<header>
+  <img src="assets/logo3.png" alt="Logo CASASOLA" style="width: 800px;">
+  <h1>CASA/SOLA</h1>
+  <p>Una casa cultural virtual para la escena musical bogotana independiente.</p>
+</header>
+
+<section>
+  <h2>Qué es este proyecto?</h2>
+  <p>CASA/SOLA fue una iniciativa de creación audiovisual para visibilizar la música independiente en Bogotá. Creamos una casa cultural virtual en formato YouTube, con entrevistas, presentaciones y análisis de la escena.</p>
+</section>
+
+<section>
+  <h2>Proceso de planeación</h2>
+  <p>Desde cero diseñamos una propuesta colaborativa: conceptualización del canal, definición de contenido, contacto con bandas, grabaciones caseras y edición DIY. Todo con el objetivo de darle visibilidad a la movida alternativa de la ciudad.</p>
+</section>
+
+<section>
+  <h2>Videos del proyecto</h2>
+  <p>Muy pronto aquí podrás ver los videos completos en YouTube.</p>
+  <div class="video-grid">
+    <!-- Inserta tus iframes de YouTube aquí -->
+  </div>
+</section>
+
+<section class="instagram">
+  <h2>Síguenos en Instagram</h2>
+  <a class="button" href="https://www.instagram.com/casa.solaa/?utm_source=ig_web_button_share_sheet" target="_blank">@casa.solaa</a>
+</section>
+
+
+<!-- Imágenes decorativas flotantes -->
+<img src="img/explosion.jpeg" class="float" style="position: absolute; top: 100px; left: 40px; width: 400px; z-index: -1;" alt="explosión meme">
+<img src="img/bolsa.jpeg" class="float" style="position: absolute; top: 600px; right: 60px; width: 350px; z-index: -1;" alt="persona con bolsa">
+<img src="img/bugs.jpeg" class="float" style="position: absolute; bottom: 300px; left: 30px; width: 450px; z-index: -1;" alt="bugs bunny gangsta">
+<img src="img/manuel.jpeg" class="float" style="position: absolute; bottom: 100px; right: 80px; width: 500px; z-index: -1;" alt="manuel bokehh">
+
+<img class="float decor" src="img/checho.jpeg"
+     style="position:absolute; top:500px; left: 40px; width:450px; z-index:-1;"
+     alt="checho parchando">
+
+<img class="float decor" src="img/luly.jpeg"
+     style="position:absolute; top:30px; right:40px; width:450px; z-index:-1;"
+     alt="lalul">
+
+
+
+
+</body>
+</html>
